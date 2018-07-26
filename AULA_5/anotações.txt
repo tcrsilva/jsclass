@@ -1,0 +1,21 @@
+getElementById() -> um objeto específico
+
+getElementByClass() -> mais objetos
+
+getElementsByTagName() -> uma coleção de objetos
+
+/* querySelector() -> busca UM elemento pelo seletor css
+
+/* querySelectorAll() -> busca TUDO pelo seletor css (por exemplos em uma lista, ele pega todos os elementos de lista // precisará de um for)
+
+// native code: c , c++
+
+/* --------- SEGUNDA PARTE: FORMULÁRIOS ---------- *\
+
+   var n1 = parseInt(document.forms.form1.n1.value);
+.value = para extração do obj
+.forms = ato de pegar todos os forms
+(com o name no html, se caso usar id entra em outra forma)
+
+-------- MONITORIA ---------
+forms.form1.nome.value.trim()

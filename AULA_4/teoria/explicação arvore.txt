@@ -1,0 +1,85 @@
+			*\----DOM----/*
+		    (Document Object Model)
+Mapeia o documento html para um árvore de objetos;
+
+<head></head>
+<body>	
+	<p>OI</p>
+	<div>
+	   <p>Quiz</p>
+	</div>
+</body>
+</html>
+
+/////////// Mostrar o que tem dentro de cada objeto/elemento HTML \\\\\\\\\\\
+		>>para não precisar entrar no W3C Schools<<
+
+function ver(obj){
+	var aux = "";
+	for (var indice in obj){
+	aux = aux + indice + " -> " + obj[indice] + "<br>";
+	}
+	document.write(aux);
+}
+
+function teste (){
+	// A variavel p é um objeto paragrfo
+	var p = document.getElementById("p1");
+	ver (p);
+}
+
+p no browser:
+	******* 
+	innerHTML -> OLA DOM! 
+	nextElementSibling -> [object HTMLScriptElement]
+	children -> [object HTMLCollection]
+	firstElementChild -> null
+	lastElementChild -> null
+	childElementCount -> 0
+
+	parentNode -> [object HTMLBodyElement]
+	parentElement -> [object HTMLBodyElement]
+	childNodes -> [object NodeList]
+	firstChild -> [object Text]
+	lastChild -> [object Text]
+	*******
+
+!!!!!!!!!!!!!!!! LEMBRAR: 
+	<script> teste(); </script> 
+Na aula hoje: aprender como disparar o efeito a partir de um evento; 
+E não mais pelo body e a tag script. Agora usaremos SOMENTE a tag BUTTON
+
+Para desabilitar o botão:
+disabled -> false
+
+===============================================================
+
+Aula: 
+
+<!DOCTYPE html>
+<head>
+	<script src="aula4.js">
+	</script>
+</head>
+<body>	
+	<p id="p1"> OLA DOM! </p>
+	<script>
+		teste();
+	</script>
+</body>
+</html>
+
+function ver(obj){
+	var aux = "";
+	for (var indice in obj){
+	aux = aux + indice + " -> " + obj[indice] + "<br>"
+	}
+	document.write(aux);
+}
+
+function teste (){
+	// A variavel p é um objeto paragrfo
+	var p = document.getElementById("p1");
+}
+
+(continuação no NOTEPAD++)

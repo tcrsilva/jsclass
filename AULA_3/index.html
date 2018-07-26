@@ -1,0 +1,67 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function ola(){
+                alert("OLA MUNDO");        
+            }
+        //ls é uma lista(vetor)
+            function contaPares(ls) {
+                var kter = 0;
+                for(var i in ls){
+                    if (ls[i] % 2 == 0)
+                        kter++;
+                    }
+                  return kter;  
+                }
+            function maior(ls){
+                var mr = ls[0];
+                for (var i in ls){
+                    if (ls[i] > mr)
+                        mr=ls[i];
+                }
+                return mr;
+            }
+            function menor(ls){
+                var mn = ls[0];
+                for (var i in ls){
+                    if(ls[i] < mn)
+                        mn=ls[i];
+                }
+                return mn;
+            }
+        // ** MAIOR E MENOR EM UMA FUNÇÃO **     //
+            //function maiorMenor(ls){
+                //var maior = ls[0];
+                //var menor = ls[0];
+                //for (var i in ls){
+                    //maior=Math.max(maior.ls[i]);
+                    //menor=Math.min(menor.ls[i]);
+                //}
+                //return [maior, menor];
+        // **** Json: (JavaScript Object Notation --> notação de objetos do javascript {chaves:valores,...} **** //
+        // **** as chaves não precisam ser inteiras ****//
+            //}
+            function somar(ls){
+                var soma = 0; //sem o var a variável se torna global
+                for(var i in ls){ //for (var i=0; i < somar.length; i++;){}
+                    soma = soma + ls[i];
+                }
+                return soma;
+            }
+        </script>
+    </head>
+    <body>
+        <script> 
+         var vetor = [1,7,4,2,6,3,0];
+            document.write(somar(vetor)+ "<br>"); //alert
+            document.write(contaPares(vetor)+ "<br>");
+            document.write(maior(vetor)+ "<br>");
+            document.write(menor(vetor));
+            //document.write(maiorMenor([-9,3,0,7,10-14,2]));
+            //var vetor = [-9,3,0,7,10,-14,2];
+            //document.write(vetor.menor +"<br>");
+            //document.write(vetor.maior);
+        </script>
+    </body>
+</html>

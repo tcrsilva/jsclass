@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <script src="imc.js"></script>
+   <title>Calculo de IMC</title> 
+</head>
+<body>
+    <h1 id="titulo">IMC</h1>
+    <div id="borda">
+    <form name = "form1">
+        <div id = "form">
+			<label>Peso:</label><br>
+			<input type="text" name="peso" placeholder = "Digite seu peso ex:70"/><br>
+        
+			<label>Altura:</label><br>
+			<input type="text" name="altura" placeholder = "Digite sua altura ex:1.80"/>
+       </div>
+    </form>
+	</div>
+   
+   <br><br>
+   
+    <button onclick = "calculaimc()">Resultado</button>
+    <button onclick = "remover()">Remover</button>
+    <button id="info" onclick = "inserir()">Informações</button>
+    <button onclick= "alterar()">Dicas</button>    
+</body>
+</html>
